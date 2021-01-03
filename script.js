@@ -110,7 +110,31 @@ if(height){
   console.log('hight is UNDEFINED');
 }
 
+// Equality Operators: == vs. ===
+ const ageTeo = 18;
+if(ageTeo === 18) console.log('You become an adult');
 
+const favoriteNum = Number(prompt(`What's your favorite number?`));
+console.log(favoriteNum);
+console.log(typeof(favoriteNum));
+
+if(favoriteNum === 23){ //'23' == 23
+  console.log('Cool! 23 is an amazing number!');
+} else if(favoriteNum === 7){
+  console.log('7 is even better number');
+} else {
+  console.log('Sorry no matching number');
+}
+
+if(favoriteNum !== 23) console.log('Why not 23?');
+
+/////////////////////////
+
+const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+
+if(numNeighbours === 1) console.log('Only one border!');
+else if(numNeighbours > 1) console.log('More the one border!');
+else console.log('No borders!');
 
 /* 
  CHALLENGE #1 
