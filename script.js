@@ -136,6 +136,14 @@ if(numNeighbours === 1) console.log('Only one border!');
 else if(numNeighbours > 1) console.log('More the one border!');
 else console.log('No borders!');
 
+
+// Logical Operators
+if(officialLanguage === 'english' && population < 50000000 && !isIsland) console.log('You should live in Bulgaria :)');
+else console.log('Bulgaria does not meet your criteria :('); 
+
+if(officialLanguage === 'english' || population < 50000000 && isIsland) console.log('You should live in Bulgaria :)');
+else console.log('Bulgaria does not meet your criteria :('); 
+
 /* 
  CHALLENGE #1 
     Mark and John are trying to compare their BMI (Body Mass Index), which is
