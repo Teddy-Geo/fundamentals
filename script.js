@@ -199,3 +199,36 @@ if ( marksBMI > johnsBMI) {
   console.log(`John's BMI (${johnsBMI}) is higher then Mark's (${johnsBMI})`)
 }
 
+
+/* Coding Challenge #3
+There are two gymnastics teams, Dolphins and Koalas. They compete against each
+other 3 times. The winner with the highest average score wins a trophy!
+
+Your tasks:
+1. Calculate the average score for each team, using the test data below */
+const dolphinsAvarage = (96 + 108 + 89)/ 3;
+const koalasAvarage = (88 + 91 + 110)/ 3;
+
+/* 2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
+as well (draw means they have the same average score) */
+
+if(dolphinsAvarage > koalasAvarage) console.log(`Dolphins average score of ${dolphinsAvarage} is grater then Koala's average score of ${koalasAvarage}. Congratulations to Dolphins, they win!!!`);
+else if (dolphinsAvarage === koalasAvarage) console.log(`There is a draw! `);
+else console.log(`Koalas average score of ${koalasAvarage} is grater then Dolphin's average score of ${dolphinsAvarage}. Congratulations to Koalas, they win!!!`);
+
+/* 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and the same time a
+score of at least 100 points. Hint: Use a logical operator to test for minimum
+score, as well as multiple else-if blocks */
+
+/* 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
+points. Otherwise, no team wins the trophy */
+
+/* Test data:
+§ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 */
+
+
