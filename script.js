@@ -71,6 +71,47 @@ if(population > averagePopulation){
   console.log(`${country}'s population is ${averagePopulation - population} below average`);
 }
 
+// Type Conversion and Coercion
+// conversion
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+console.log(String(23));
+//coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' - '10' + 3);
+console.log('23' * 2);
+console.log('23' > '16');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+//Truthy and Falsy Values
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Teo'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if(money) {
+  console.log(`don't spend it all`);
+} else {
+  console.log(`you should get a job`);
+}
+
+let height;
+if(height){
+  console.log('hight is defined');
+} else {
+  console.log('hight is UNDEFINED');
+}
+
+
+
 /* 
  CHALLENGE #1 
     Mark and John are trying to compare their BMI (Body Mass Index), which is
