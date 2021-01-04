@@ -221,11 +221,23 @@ else console.log(`Koalas average score of ${koalasAvarage} is grater then Dolphi
 team only wins if it has a higher score than the other team, and the same time a
 score of at least 100 points. Hint: Use a logical operator to test for minimum
 score, as well as multiple else-if blocks */
+const dolphinsNextAverage = (97 + 112 + 81)/3;
+const koalasNextAverage = (109 + 95 + 86)/3;
 
+if(dolphinsNextAverage >= 100 && dolphinsNextAverage > koalasNextAverage){
+  console.log(`Dolphin wins with ${dolphinsNextAverage}!`);
+} else if(koalasNextAverage >= 100 && koalasNextAverage> dolphinsNextAverage){
+  console.log(`Koalas wins with ${koalasNextAverage}`);
+} else {
+  console.log(`No one wins both scores averages are less than 100, Koalas - ${koalasNextAverage} and Dolphins ${dolphinsNextAverage}`);
+}
 /* 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
 both teams have the same score and both have a score greater or equal 100
 points. Otherwise, no team wins the trophy */
+const dolphinsFinalAverage = (97 + 112 + 101)/3;
+const koalasFinalAverage = (109 + 95 + 106)/3;
 
+if(dolphinsFinalAverage === koalasFinalAverage && koalasFinalAverage >= 100 && dolphinsFinalAverage >= 100) console.log (`The conditions for draw are met`);
 /* Test data:
 § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
