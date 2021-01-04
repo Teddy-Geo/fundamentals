@@ -144,6 +144,33 @@ else console.log('Bulgaria does not meet your criteria :(');
 if(officialLanguage === 'english' || population < 50000000 && isIsland) console.log('You should live in Bulgaria :)');
 else console.log('Bulgaria does not meet your criteria :('); 
 
+//  The switch Statement
+const day = 'wednesday';
+
+switch (day) {
+  case 'monday': //day === 'monday'
+    console.log('Plan');
+    console.log('Go to');
+    break;
+    case 'tuesday':
+      console.log('Prepare meal');
+      console.log('Prepare bed');
+      break;
+      case 'wednesday':
+      case 'thursday':
+        console.log('Write code');
+        break;
+        case 'friday':
+          console.log('Record video');
+          break;
+        case 'saturday':
+        case 'sunday':
+          console.log('Rest');
+          break;
+  default:
+    console.log('Not a valid day');
+    break;
+}
 /* 
  CHALLENGE #1 
     Mark and John are trying to compare their BMI (Body Mass Index), which is
