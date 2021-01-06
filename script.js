@@ -1,7 +1,7 @@
 // Values and Variables
 const country = "Bulgaria";
 const continent = "Europe";
-let population = 7000000;
+let population = 70000000;
 
 console.log(country, continent, population);
 
@@ -172,7 +172,7 @@ switch (day) {
     break;
 }
 
-const allLanguages = 'bulgarian';
+const allLanguages = 'spanish';
 
 switch (allLanguages) {
   case 'chines':
@@ -195,6 +195,16 @@ switch (allLanguages) {
     console.log('Great language too');
     break;
 }
+// The Conditional (Ternary) Operator
+const userAge = 23;
+// userAge >= 18 ? console.log('You can drink 🍸') : console.log('You can drink 🥛');
+
+const drink = userAge >= 18 ? '🍸' : '🥛';
+console.log(`You can drink ${drink}`);
+
+const average = population > 33000000 ? 'above' : 'below';
+console.log(`Bulgarian population is ${average} average`);
+
 /* 
  CHALLENGE #1 
     Mark and John are trying to compare their BMI (Body Mass Index), which is
